@@ -18,17 +18,28 @@ body {
 
 button {
   font-family: inherit;
-  background-color: green;
+  background-color: #4caf50;
   width: clamp(12rem, 8vw + 12rem, 24rem);
   height: clamp(3rem, 0.6vw + 3rem, 3.75rem);
   border: none;
   font-size: clamp(1rem, 1vw + 1rem, 4rem);
   font-weight: 700;
   color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease;
 }
 
 button:hover {
-  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4);
+  background-color: #43a047;
+}
+
+button:active {
+  transform: scale(0.96);
+  box-shadow: 0 3px 6px rgba(76, 175, 80, 0.25);
 }
 
 h1 {
@@ -70,6 +81,7 @@ textarea {
 
 input {
   height: 3rem;
+  text-indent: 10px;
 }
 
 textarea {
