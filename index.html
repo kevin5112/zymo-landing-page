@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/main.js" defer></script>
     <title>Zymo Landing Page</title>
   </head>
   <body>
@@ -30,7 +31,7 @@
             <h3>Lorem ipsum</h3>
           </div>
         </div>
-        <button class="hero-button">Inquire Now</button>
+        <button id="inquireBtn" class="hero-button">Inquire Now</button>
       </section>
       <section class="description-section">
         <div class="description-text">
@@ -66,7 +67,7 @@
           </div>
         </div>
       </section>
-      <section class="form-section">
+      <section id="contact" class="form-section">
         <h2>Form</h2>
         <form action="contactForm">
           <div class="grid-2">
@@ -100,9 +101,10 @@
               rows="5"
             ></textarea>
           </div>
+          <div class="submit-btn">
+            <button>Submit</button>
+          </div>
         </form>
-
-        <button>Submit</button>
       </section>
     </main>
   </body>
