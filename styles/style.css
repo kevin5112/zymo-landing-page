@@ -39,6 +39,42 @@ h3 {
   font-weight: 500;
 }
 
+section {
+  padding: 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #939393;
+  border-radius: 10px;
+  font-family: inherit;
+}
+
+input {
+  height: 3rem;
+}
+
+textarea {
+  height: 10rem;
+  resize: none;
+}
+
+label {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
 .banner {
   width: 100vw;
 }
@@ -53,7 +89,6 @@ h3 {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  padding: 2rem;
 }
 
 .hero-icons {
@@ -85,7 +120,7 @@ h3 {
   justify-content: center;
   align-items: center;
   background-color: #f1f1f1;
-  padding: 3rem;
+  padding-bottom: 5rem;
 }
 
 .description-text {
@@ -99,6 +134,27 @@ h3 {
 
 .description-header {
   text-align: center;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6rem;
+  justify-content: stretch;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 @media (max-width: 600px) {

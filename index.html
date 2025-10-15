@@ -66,6 +66,44 @@
           </div>
         </div>
       </section>
+      <section class="form-section">
+        <h2>Form</h2>
+        <form action="contactForm">
+          <div class="grid-2">
+            <div class="form-field">
+              <label for="firstName">First Name</label>
+              <input id="firstName" name="firstName" type="text" required />
+            </div>
+
+            <div class="form-field">
+              <label for="lastName">Last Name</label>
+              <input id="lastName" name="lastName" type="text" required />
+            </div>
+          </div>
+          <div class="grid-2">
+            <div class="form-field">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" required />
+            </div>
+
+            <div class="form-field">
+              <label for="role">Role</label>
+              <input id="role" name="role" type="text" required />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="comments">Additional Comments</label>
+            <textarea
+              id="comments"
+              name="comments"
+              type="text"
+              rows="5"
+            ></textarea>
+          </div>
+        </form>
+
+        <button>Submit</button>
+      </section>
     </main>
   </body>
 </html>
