@@ -100,7 +100,9 @@ p {
 }
 
 .banner {
-  width: 100vw;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .header {
@@ -237,5 +239,21 @@ p {
 
   button {
     width: 100%;
+  }
+
+  #toast {
+    top: calc(env(safe-area-inset-top, 0px) + 12px);
+    right: calc(env(safe-area-inset-right, 0px) + 12px);
+    left: calc(env(safe-area-inset-left, 0px) + 12px);
+    bottom: auto;
+    transform: translateY(-10px);
+    margin-right: 12px;
+    margin-left: 12px;
+    max-width: calc(100% - 24px);
+    text-align: left;
+  }
+
+  #toast.show {
+    transform: translateY(0);
   }
 }
