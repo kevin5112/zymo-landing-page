@@ -8,6 +8,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", system-ui, -apple-system, Arial, Helvetica, sans-serif;
 }
@@ -15,27 +19,31 @@ body {
 button {
   font-family: inherit;
   background-color: green;
-  width: 17rem;
-  height: 3.5rem;
+  width: clamp(12rem, 8vw + 12rem, 24rem);
+  height: clamp(3rem, 0.6vw + 3rem, 3.75rem);
   border: none;
-  font-size: 1.75rem;
+  font-size: clamp(1rem, 1vw + 1rem, 4rem);
   font-weight: 700;
   color: white;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 h1 {
-  font-size: 3rem;
+  font-size: clamp(1.75rem, 2vw + 1rem, 7rem);
   font-weight: 700;
   color: green;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: clamp(1.25rem, 1vw + 1rem, 4rem);
   font-weight: 500;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 0.2vw + 1rem, 1.5rem);
   font-weight: 500;
 }
 
@@ -73,6 +81,10 @@ label {
   font-family: inherit;
   font-weight: 500;
   font-size: 1rem;
+}
+
+p {
+  font-size: clamp(0.5rem, 1vw + 0.5rem, 1rem);
 }
 
 .banner {
@@ -141,7 +153,7 @@ label {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .grid-2 {
@@ -157,9 +169,41 @@ label {
   gap: 0.5rem;
 }
 
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 600px) {
+  section {
+    padding: 1.5rem;
+  }
+
   .hero-icons {
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.25rem;
+    padding-top: 0;
+  }
+
+  .hero-icons img {
+    width: 7rem;
+  }
+
+  form {
+    gap: 1.25rem;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  textarea {
+    height: 8rem;
+  }
+
+  button {
+    width: 100%;
   }
 }
